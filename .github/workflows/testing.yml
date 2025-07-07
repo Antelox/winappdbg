@@ -1,8 +1,10 @@
 name: Test the code
 on:
   push:
-    branches:
-      - master
+    paths-ignore:
+      - ".gitignore"
+      - ".readthedocs.yaml"
+      - "README.md"
   pull_request:
     branches:
       - master
